@@ -125,7 +125,7 @@ Now you should use **SublimeGit** Fetch/Pull/Push and other actions with remotes
 
 Full process described above you'll do only once. On every next system boot (restart), you just run **Git Bash** (or add shortcut to **Startup** section in **Start** menu to do this automatically after login) and type OpenSSH Key passphrase. After that, you can close **Git Bash** and use SublimeGit w/o typing passphrase on every interaction with remotes.
 
-* ~ Aleksandar Urosevic @20150419 *
+*~ Aleksandar Urosevic @20150419*
 
 ## Credits
 
