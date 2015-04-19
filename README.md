@@ -6,6 +6,8 @@ All SSH files are stored on path `C:\Users\aleksandar\.ssh\` (just replace *alek
 
 Check out my [Sublime Text cheatsheet](https://github.com/urosevic/sublime).
 
+![ScreenShot](/screenshots/JustForPractice.png)
+
 ## Sublime Text plugins to try
 
 1. 	[SublimeGit](https://sublimegit.net/) **Additional manual tweaks required to make remote repos to work**
