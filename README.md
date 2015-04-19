@@ -76,5 +76,6 @@ setx SSH_AGENT_PID $SSH_AGENT_PID 1> nul
 unset env
 ```
 **NOTE:** If you have key stored in file with different name than `id_rsa`, replace lines `ssh-add` with `ssh-add ~/.ssh/id_rsa_github` in `.bashrc` file.
+
 6. Close **Git Bash** and run **Sublime Text 3**.
 7. Now you should use **SublimeGit** Fetch/Pull/Pus w/o problems. On next reboot you should first run *Git Bash* and enter key passphrase.
