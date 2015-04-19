@@ -17,7 +17,7 @@ Try to make really working [Git](http://git-scm.com/) implementation for [Sublim
 
 ## Step by Step
 
-### Step 1.
+### Step 1
 Create ppk file and store it to `C:\Users\aleksandar\.ssh\id_rsa` (just replace *aleksandar* with your username) or use your existing key file.
 
 ### Step 2
@@ -27,9 +27,9 @@ Run **Git Bash** from **Start** menu.
 Execute `ssh-agent` in **Git Bash** console.
 
 ### Step 4
-Execute `ssh-add` if you have `id_rsa` private key, or if you have it with different name then `~/.ssh/id_rsa_github`, and enter passphrase.
+Execute `ssh-add` if you have `id_rsa` private key, or if you have it with different name, then specify that name, like `~/.ssh/id_rsa_github`. Then enter passphrase for your key.
 
-This will create ~/.ssh/agent.env file used latter in script below.
+This will create `~/.ssh/agent.env` file used latter in script below.
 
 ### Step 5
 Create file `C:\Users\aleksandar\.bashrc` and add following content to it:
@@ -87,7 +87,8 @@ setx SSH_AGENT_PID $SSH_AGENT_PID 1> nul
 
 unset env
 ```
-**NOTE:** If you have key stored in file with different name than `id_rsa`, replace lines `ssh-add` with `ssh-add ~/.ssh/id_rsa_github` in `.bashrc` file.
+
+**NOTE:** If you have key stored in file with name different than `id_rsa`, replace lines `ssh-add` with `ssh-add ~/.ssh/id_rsa_github` in `.bashrc` file.
 
 
 ### Step 6
