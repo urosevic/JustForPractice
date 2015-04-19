@@ -4,19 +4,18 @@ Try to make really working [Git](http://git-scm.com/) implementation for [Sublim
 
 ## Plugins to try
 
-1. 	Sublime Text [Git](https://github.com/kemayo/sublime-text-git): Git integration: it's pretty handy. Who knew, right?
-2. 	[SideBarGit](https://github.com/titoBouzout/SideBarGit): Add git commands to sidebar. Textual port of komodin extension for sublime text.
+1. 	[SublimeGit](https://sublimegit.net/) **Additional manual tweaks required to make remote repos to work**
+2. 	Sublime Text [Git](https://github.com/kemayo/sublime-text-git): Git integration: it's pretty handy. Who knew, right? **Same as above with remotes**
+3. 	[SideBarGit](https://github.com/titoBouzout/SideBarGit): Add git commands to sidebar. Textual port of komodin extension for sublime text. **Works pout of the box!** But ask for passphrase on every interaction with remote.
 
-## HOWTO's
+## Starting points
 
 1. 	[Using Git Inside of Sublime Text to Improve Workflow](https://scotch.io/tutorials/using-git-inside-of-sublime-text-to-improve-workflow) by Chris Sevilleja ([@sevilayha](https://twitter.com/sevilayha))
-
-*~ Aleksandar Urosevic*
+2. 	[SublimeGit Remote Issues](https://docs.sublimegit.net/troubleshooting.html#remote-issues)
+3. 	[GitHub: SublimeGit Issues](https://github.com/SublimeGit/SublimeGit/issues/3)
+4. 	[Working with SSH key passphrases](https://help.github.com/articles/working-with-ssh-key-passphrases/)
 
 ## Step by Step
-
-* 	[Working with SSH key passphrases](https://help.github.com/articles/working-with-ssh-key-passphrases/)
-* 	[SublimeGit issues](https://github.com/SublimeGit/SublimeGit/issues/3)
 
 1. 	Create ppk file and store it to `C:\Users\aleksandar\.ssh\id_rsa` or use your existing key file.
 2. 	Run **Git Bash**.
@@ -80,5 +79,4 @@ unset env
 
 **NOTE:** If you have key stored in file with different name than `id_rsa`, replace lines `ssh-add` with `ssh-add ~/.ssh/id_rsa_github` in `.bashrc` file.
 
-6. Close **Git Bash** and run **Sublime Text 3**
-7. Now you should use SublimeGit Fetch/Pull/Pus w/o problem.
+6. Close **Git Bash** and run **Sublime Text 3**. Now you should use **SublimeGit** Fetch/Pull/Pus w/o problems.
