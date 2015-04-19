@@ -6,7 +6,7 @@ Try to make really working [Git](http://git-scm.com/) implementation for [Sublim
 
 1. 	[SublimeGit](https://sublimegit.net/) **Additional manual tweaks required to make remote repos to work**
 2. 	Sublime Text [Git](https://github.com/kemayo/sublime-text-git): Git integration: it's pretty handy. Who knew, right? **Same as above with remotes**
-3. 	[SideBarGit](https://github.com/titoBouzout/SideBarGit): Add git commands to sidebar. Textual port of komodin extension for sublime text. **Works pout of the box!** But ask for passphrase on every interaction with remote.
+3. 	[SideBarGit](https://github.com/titoBouzout/SideBarGit): Add git commands to sidebar. Textual port of komodin extension for sublime text. **Works out of the box, but asks for passphrase on every interaction with remote.**
 
 ## Starting points
 
@@ -17,11 +17,23 @@ Try to make really working [Git](http://git-scm.com/) implementation for [Sublim
 
 ## Step by Step
 
-1. 	Create ppk file and store it to `C:\Users\aleksandar\.ssh\id_rsa` or use your existing key file.
-2. 	Run **Git Bash**.
-3. 	Execute `ssh-agent`
-4. 	Execute `ssh-add` if you have `id_rsa` private key, or if you have it with different name then `~/.ssh/id_rsa_github`, and enter passphrase.
-5. 	Create file **C:\Users\aleksandar\.bashrc** and add following content to it:
+### Step 1.
+Create ppk file and store it to `C:\Users\aleksandar\.ssh\id_rsa` (just replace *aleksandar* with your username) or use your existing key file.
+
+### Step 2
+Run **Git Bash** from **Start** menu.
+
+### Step 3
+Execute `ssh-agent` in **Git Bash** console.
+
+### Step 4
+Execute `ssh-add` if you have `id_rsa` private key, or if you have it with different name then `~/.ssh/id_rsa_github`, and enter passphrase.
+
+This will create ~/.ssh/agent.env file used latter in script below.
+
+### Step 5
+Create file `C:\Users\aleksandar\.bashrc` and add following content to it:
+
 ```
 # Note: ~/.ssh/environment should not be used, as it
 #       already has a different purpose in SSH.
@@ -77,5 +89,10 @@ unset env
 ```
 **NOTE:** If you have key stored in file with different name than `id_rsa`, replace lines `ssh-add` with `ssh-add ~/.ssh/id_rsa_github` in `.bashrc` file.
 
-6. Close **Git Bash** and run **Sublime Text 3**.
-7. Now you should use **SublimeGit** Fetch/Pull/Pus w/o problems. On next reboot you should first run *Git Bash* and enter key passphrase.
+
+### Step 6
+Close **Git Bash** and run **Sublime Text 3**.
+
+### Step 7
+Now you should use **SublimeGit** Fetch/Pull/Pus w/o problems. On next reboot you should first run *Git Bash* and enter key passphrase.
+
