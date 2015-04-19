@@ -21,7 +21,8 @@ Try to make really working [Git](http://git-scm.com/) implementation for [Sublim
 2. 	Run **Git Bash**.
 3. 	Execute `ssh-agent`
 4. 	Execute `ssh-add` if you have `id_rsa` private key, or if you have it with different name then `~/.ssh/id_rsa_github`, and enter passphrase.
-5. 	Create file **C:\Users\aleksandar\.bashrc** and add following content to it: ```
+5. 	Create file **C:\Users\aleksandar\.bashrc** and add following content to it:
+```
 # Note: ~/.ssh/environment should not be used, as it
 #       already has a different purpose in SSH.
 
@@ -74,8 +75,6 @@ setx SSH_AGENT_PID $SSH_AGENT_PID 1> nul
 
 unset env
 ```
-
 **NOTE:** If you have key stored in file with different name than `id_rsa`, replace lines `ssh-add` with `ssh-add ~/.ssh/id_rsa_github` in `.bashrc` file.
-
 6. Close **Git Bash** and run **Sublime Text 3**.
 7. Now you should use **SublimeGit** Fetch/Pull/Pus w/o problems. On next reboot you should first run *Git Bash* and enter key passphrase.
