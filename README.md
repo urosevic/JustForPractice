@@ -11,4 +11,4 @@ Try to make really working [Git](http://git-scm.com/) implementation for [Sublim
 
 1. 	[Using Git Inside of Sublime Text to Improve Workflow](https://scotch.io/tutorials/using-git-inside-of-sublime-text-to-improve-workflow) by Chris Sevilleja ([@sevilayha](https://twitter.com/sevilayha))
 
--- Aleksandar Urosevic
+*-- Aleksandar Urosevic*
