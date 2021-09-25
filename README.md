@@ -1,4 +1,4 @@
-# SublimeGit and Windows 7 (Just For Practice)
+# SublimeGit and Windows 7/10 (Just For Practice)
 
 Make really working [Git](http://git-scm.com/) implementation for [Sublime Text 3](http://www.sublimetext.com/3) on [Windows 7 64bit](http://windows.microsoft.com/en-us/windows/windows-help#windows=windows-7) which will work with OpenSSH SSH keys on [GitHub](https://github.com) and [GitLab](https://about.gitlab.com/).
 
